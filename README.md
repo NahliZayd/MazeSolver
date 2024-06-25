@@ -29,7 +29,7 @@ The main classes in the project are:
 - `Entity`: This is the base class for all entities in the game. It includes properties like health and position, and methods for movement and attack.
 - `Player` and `Monster`: These classes extend the `Entity` class and represent the player and monster entities in the game.
 
-![Class diagram](https://i.ibb.co/GtDmScq/ZLN9-Rjim4-Bth-Am-YVb3e-j4-SXAEBOQOe-W3e8-Ow-CN8-WHR7-DXk-HDBZOSTly-Uxb-Ab-Eqk5udp-Pa-Rp-E9kkb-SPI6z.png)
+![ClassDiagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/NahliZayd/MazeSolver/master/dd.puml)
 
 ## Contributing
 
