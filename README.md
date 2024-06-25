@@ -29,49 +29,7 @@ The main classes in the project are:
 - `Entity`: This is the base class for all entities in the game. It includes properties like health and position, and methods for movement and attack.
 - `Player` and `Monster`: These classes extend the `Entity` class and represent the player and monster entities in the game.
 
-```plantuml
-@startuml
-
-class Maze {
-  -numRows: int
-  -numColumns: int
-  -maze: int[][]
-  -entities: ArrayList<Entity>
-  +Maze()
-  +run(): void
-  +generate(): void
-  +solveMaze(int, int): boolean
-  +getEntities(): ArrayList<Entity>
-}
-
-abstract class Entity {
-  -row: int
-  -col: int
-  -health: int
-  +Entity(int, int, int)
-  +move(): void
-  +attack(): void
-  +draw(Graphics): void
-  +isDead(): boolean
-}
-
-class Player {
-  +Player(int, int, int, int, Color)
-  +movePlayer(int): void
-  +performAttackAnimation(Graphics2D, Player): void
-  +updatePlayerDirection(int, int): void
-}
-
-class Monster {
-  +Monster(int, int, int, int, Color)
-  +updateMonster(): void
-}
-
-Maze "1" *-- "many" Entity : contains
-Entity <|-- Player : extends
-Entity <|-- Monster : extends
-
-@enduml```
+![Class diagram](https://i.ibb.co/GtDmScq/ZLN9-Rjim4-Bth-Am-YVb3e-j4-SXAEBOQOe-W3e8-Ow-CN8-WHR7-DXk-HDBZOSTly-Uxb-Ab-Eqk5udp-Pa-Rp-E9kkb-SPI6z.png)
 
 ## Contributing
 
